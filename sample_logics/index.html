@@ -1,0 +1,35 @@
+<html>
+<script>
+    // const a = ['mobile', 'mouse', 'moneypot', 'monitor', 'mousepad'];
+    const a = ['bags', 'baggage', 'banner', 'box', 'cloths'];
+    // let s = 'mo';
+    let s = 'bags';
+
+    function searchcustomerQueryingInArray(repository, customerQuery) {
+        console.log(repository, customerQuery)
+
+        let main_result = [];
+        let subStr = customerQuery.substring(0, 2);
+        let s_split = customerQuery.split('');
+        for (let i = 1; i < s_split.length; i++) {
+            let r = [];
+            if (i >= 2) {
+                subStr = subStr + s_split[i];
+            }
+            if (customerQuery.length >= 2) {
+                console.log(i, subStr)
+                for (let j = 0; j < repository.length; j++) {
+                    if (repository[j].toLowerCase().includes(subStr.toString().toLowerCase()) && r.length < 3) {
+                        r.push(repository[j]);
+                    }
+                }
+                if (r.length > 0)
+                    main_result.push(r);
+            }
+        }
+        return main_result;
+    }
+    console.log(searchcustomerQueryingInArray(a, s));
+</script>
+
+</html>
