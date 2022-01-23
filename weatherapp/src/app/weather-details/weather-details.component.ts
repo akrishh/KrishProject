@@ -11,13 +11,15 @@ import { WeatherdataService } from './../weather.service';
 
 })
 export class WeatherdetailsComponent {
+  @Input() weatherUser: string = '';
   faWind = faWind;
   faTint = faTint;
   faThermo = faThermometerThreeQuarters;
   getdata: Array<data> = [];
   city: string = "";
-  invaliddata?: boolean = true;
-  disabledFlag?: boolean = true;
+  reset: boolean = true;
+  invalid: boolean = false;
+  disabledFlag: boolean = true;
   resultData: Array<data> = [];
   title: string = "Weather Guide";
   hint: string = "Eg., San Jose, Seattle, New York, Chicago, Atlanta, Austin, Denver";
@@ -34,7 +36,7 @@ export class WeatherdetailsComponent {
     if (this.city && this.getdata) {
       this.resultData = [];
       this.resultData = this.getdata.filter(res => (res.name).toLowerCase() === (this.city).toLowerCase());
-      this.invaliddata = (this.resultData != undefined && this.resultData.length > 0) ? false : true;
+      this.reset = this.invalid = (this.resultData != undefined && this.resultData.length > 0) ? false : true;
       this.city = "";
     }
   }

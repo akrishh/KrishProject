@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
 
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -11,11 +12,19 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { WeatherdetailsComponent } from './weather-details/weather-details.component';
 import { WeatherdataService } from './weather.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WeatherdetailsComponent
+    WeatherdetailsComponent,
+    HomeComponent,
+    LoginComponent,
+    PageNotFoundComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -23,11 +32,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     MatIconModule,
     MatButtonModule,
-    BrowserAnimationsModule
+    MatInputModule,
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [WeatherdataService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
-
 }

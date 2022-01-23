@@ -1,55 +1,65 @@
-<h1 align="center"><b>{{title}}</b></h1>
-<div align="center">
-  <section>
-    <label class="format1"><b>Enter City:</b>&nbsp;&nbsp;</label>
-    <input matInput type="text" class="format1" [(ngModel)]="city" autofocus placeholder="{{defaultValue}}" id="app-input"
-      (keyup.enter)="validatedata()" (keyup)="textEntered($event)" size="40" />
+<div>
+  <h1 align="center"><b>Hello {{weatherUser}}! Welcome to {{title}}</b></h1>
+  <div align="center">
+    <section>
+      <mat-form-field appearance="outline">
+        <mat-label>Enter City:</mat-label>
+        <input matInput type="text" class="format1" [(ngModel)]="city" autofocus placeholder="{{defaultValue}}"
+          id="app-input" (keyup.enter)="validatedata()" (keyup)="textEntered($event)" size="40" />
+      </mat-form-field>
       <h5 class="format1">
         {{hint}}
       </h5>
       &nbsp; &nbsp;
-    <button mat-raised-button color="accent" class="format1" (click)="validatedata()" [disabled]="disabledFlag">{{btnText}}</button>
-  </section>
+      <button mat-raised-button color="accent" class="format1" (click)="validatedata()"
+        [disabled]="disabledFlag">{{btnText}}</button>
+    </section>
 
-  <section *ngIf="!invaliddata">
-    <table border="0" cellpadding="10" cellspacing="10" width="500">
-      <thead>
-        <tr>
-          <th colspan="3">
-            <div><h2><b class="cityColor">{{resultData[0].name}}</b>'s current weather is </h2></div>
-          </th>
-        </tr>
-        <tr>
-          <th>Temperature</th>
-          <th>Wind</th>
-          <th>Humidity</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td align="center">
-            <div id="output-temperature"> 
-              <fa-icon [icon]="faThermo" class="redColor"></fa-icon>
-              {{resultData[0].temperature}} </div>
-          </td>
-          <td align="center">
-            <div id="output-wind"> 
-              <fa-icon [icon]="faWind" class="blueColor"></fa-icon>
+    <section *ngIf="!reset">
+      <table border="0" cellpadding="10" cellspacing="10" width="500">
+        <thead>
+          <tr>
+            <th colspan="3">
+              <div>
+                <h2><b class="cityColor">{{resultData[0].name}}</b>'s current weather is </h2>
+              </div>
+            </th>
+          </tr>
+          <tr>
+            <th>Temperature</th>
+            <th>Wind</th>
+            <th>Humidity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="center">
+              <div id="output-temperature">
+                <fa-icon [icon]="faThermo" class="redColor"></fa-icon>
+                {{resultData[0].temperature}}
+              </div>
+            </td>
+            <td align="center">
+              <div id="output-wind">
+                <fa-icon [icon]="faWind" class="blueColor"></fa-icon>
 
-              {{resultData[0].wind}} </div>
-          </td>
-          <td align="center">
-            <div id="output-humidity">
-              <fa-icon [icon]="faTint" class="orangeColor"></fa-icon>
-              {{resultData[0].humidity}} </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <div *ngIf="invaliddata">
+                {{resultData[0].wind}}
+              </div>
+            </td>
+            <td align="center">
+              <div id="output-humidity">
+                <fa-icon [icon]="faTint" class="orangeColor"></fa-icon>
+                {{resultData[0].humidity}}
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <div *ngIf="invalid">
       <h3>
         <font color="red">Please enter valid city</font>
       </h3>
     </div>
-  </section>
+  </div>
 </div>

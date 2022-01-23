@@ -1,0 +1,26 @@
+<br />
+<br />
+<br />
+<div align="center">
+  <h1> <b>Hello New User! Please login...</b></h1>
+</div>
+
+<div align="center">
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label>Username:</mat-label>
+      <input type="text" matInput placeholder="Username" [(ngModel)]="loginusername" />
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label>Password:</mat-label>
+      <input type="password" matInput />
+    </mat-form-field>
+  </p>
+  <p>
+    <button mat-raised-button color="accent" (click)="onLogin()">Login</button>
+  </p>
+</div>
+<!-- [loggedInUser]="username"-->
+<router-outlet></router-outlet>
