@@ -9,6 +9,8 @@ import { HttpClient } from '@angular/common/http';
 })
 
 export class AppComponent implements OnInit {
+
+  welcomeText = "Welcome";
   todo: object = {};
 
   constructor(
@@ -19,7 +21,11 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.router.navigate(['login']);
-    this.http.get('https://jsonplaceholder.typicode.com/posts?userId=1').subscribe(x => this.todo = x);
+    this.http.get('https://jsonplaceholder.typicode.com/posts?userId=1').subscribe(
+      x => {
+        return this.todo = x;
+      }
+    );
   }
 
 }

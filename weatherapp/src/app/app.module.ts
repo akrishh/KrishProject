@@ -18,6 +18,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { HeaderComponent } from './header/header.component';
 import { AuthenticateComponent } from './authenticate/authenticate.component';
 import { SharedModule } from './shared/shared.module';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SharedModule } from './shared/shared.module';
     LoginComponent,
     PageNotFoundComponent,
     HeaderComponent,
-    AuthenticateComponent
+    AuthenticateComponent,
+    WelcomeComponent
   ],
   imports: [
     HttpClientModule,
