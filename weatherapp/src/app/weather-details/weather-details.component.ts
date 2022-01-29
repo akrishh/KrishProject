@@ -2,6 +2,7 @@ import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { faWind, faTint, faThermometerThreeQuarters } from '@fortawesome/free-solid-svg-icons';
 import { resetFakeAsyncZone } from '@angular/core/testing';
 import { WeatherdataService } from './../weather.service';
+import { LoginService } from '../login/login.service';
 
 @Component({
   selector: 'app-weather-details',
@@ -11,7 +12,8 @@ import { WeatherdataService } from './../weather.service';
 
 })
 export class WeatherdetailsComponent {
-  @Input() weatherUser: string = '';
+  // @Input() weatherUser: string = '';
+  weatherUser = '';
   faWind = faWind;
   faTint = faTint;
   faThermo = faThermometerThreeQuarters;
@@ -25,10 +27,14 @@ export class WeatherdetailsComponent {
   hint: string = "Eg., San Jose, Seattle, New York, Chicago, Atlanta, Austin, Denver";
   btnText: string = "Fetch";
   defaultValue: string = "Enter a City name";
-  constructor(public weatherData: WeatherdataService) { }
+  constructor(
+    public weatherData: WeatherdataService,
+    private loginService: LoginService
+  ) { }
 
   ngOnInit(): void {
     this.getdata = this.weatherData.getdata();
+    this.weatherUser = this.loginService.getLoggedInUser();
   }
 
   public validatedata() {

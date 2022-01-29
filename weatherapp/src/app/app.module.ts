@@ -16,6 +16,8 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HeaderComponent } from './header/header.component';
+import { AuthenticateComponent } from './authenticate/authenticate.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -24,9 +26,11 @@ import { HeaderComponent } from './header/header.component';
     HomeComponent,
     LoginComponent,
     PageNotFoundComponent,
-    HeaderComponent
+    HeaderComponent,
+    AuthenticateComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     FontAwesomeModule,
     FormsModule,
@@ -34,7 +38,8 @@ import { HeaderComponent } from './header/header.component';
     MatButtonModule,
     MatInputModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule
   ],
   providers: [WeatherdataService],
   bootstrap: [AppComponent]
