@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Krish - App</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        img {
+            -webkit-filter: drop-shadow(1px 1px 0 rgb(43, 43, 43)) hue-rotate(334deg);
+            filter: drop-shadow(1px 1px 0 rgb(43, 43, 43)) hue-rotate(334deg);
+        }
+
+        img[data-active="true"] {
+            -webkit-filter: drop-shadow(1px 1px 0 rgb(43, 43, 43)) drop-shadow(1px 1px 0 rgb(153, 153, 153)) drop-shadow(1px -1px 0 rgb(155, 155, 155)) hue-rotate(334deg);
+            filter: drop-shadow(1px 1px 0 rgb(43, 43, 43)) drop-shadow(1px -1px 0 rgb(153, 153, 153)) drop-shadow(1px 1px 1px rgb(155, 155, 155)) hue-rotate(334deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <font color="navy">KrishXpress</font> application server is up and running....
+    </h1>
+    <p>
+        Please provide your Stars for KrishXpress
+    </p>
+    <div id="container"></div>
+    <script src="hash.js"></script>
+</body>
+
+</html>

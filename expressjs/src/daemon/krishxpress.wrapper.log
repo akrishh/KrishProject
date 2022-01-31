@@ -1,0 +1,50 @@
+2022-01-30 12:01:15 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\node-windows\lib\wrapper.js --file C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js --scriptoptions= --log "KrishXpress wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-01-30 12:01:15 - Started 14412
+2022-01-30 12:03:15 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\node-windows\lib\wrapper.js --file C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js --scriptoptions= --log "KrishXpress wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-01-30 12:03:16 - Started 1200
+2022-01-30 12:05:02 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\node-windows\lib\wrapper.js --file C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js --scriptoptions= --log "KrishXpress wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-01-30 12:05:02 - Started 5360
+2022-01-30 12:07:51 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\node-windows\lib\wrapper.js --file C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js --scriptoptions= --log "KrishXpress wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-01-30 12:07:51 - Started 14860
+2022-01-30 12:11:03 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\node-windows\lib\wrapper.js --file C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js --scriptoptions= --log "KrishXpress wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-01-30 12:11:04 - Started 15116
+2022-01-30 12:12:23 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\node-windows\lib\wrapper.js --file C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js --scriptoptions= --log "KrishXpress wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-01-30 12:12:23 - Started 15784
+2022-01-30 12:14:08 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\node-windows\lib\wrapper.js --file C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js --scriptoptions= --log "KrishXpress wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-01-30 12:14:08 - Started 6064
+2022-01-30 12:21:04 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\node-windows\lib\wrapper.js --file C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js --scriptoptions= --log "KrishXpress wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-01-30 12:21:04 - Started 12948
+2022-01-30 12:21:38 - Stopping krishxpress.exe
+2022-01-30 12:21:38 - ProcessKill 12948
+2022-01-30 12:21:38 - Found child process: 7644 Name: conhost.exe
+2022-01-30 12:21:38 - Found child process: 14016 Name: node.exe
+2022-01-30 12:21:38 - Stopping process 7644
+2022-01-30 12:21:38 - Send SIGINT 7644
+2022-01-30 12:21:38 - SIGINT to 7644 failed - Killing as fallback
+2022-01-30 12:21:38 - Stopping process 14016
+2022-01-30 12:21:38 - Send SIGINT 14016
+2022-01-30 12:21:38 - SIGINT to 14016 failed - Killing as fallback
+2022-01-30 12:21:38 - Stopping process 12948
+2022-01-30 12:21:38 - Send SIGINT 12948
+2022-01-30 12:21:38 - SIGINT to 12948 failed - Killing as fallback
+2022-01-30 12:21:38 - Finished krishxpress.exe
+2022-01-30 12:21:40 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\node-windows\lib\wrapper.js --file C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js --scriptoptions= --log "KrishXpress wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-01-30 12:21:40 - Started 13668
+2022-01-30 12:22:31 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\node-windows\lib\wrapper.js --file C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js --scriptoptions= --log "KrishXpress wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-01-30 12:22:31 - Started 5988
+2022-01-30 13:41:00 - Stopping krishxpress.exe
+2022-01-30 13:41:00 - ProcessKill 5988
+2022-01-30 13:41:00 - Found child process: 9252 Name: conhost.exe
+2022-01-30 13:41:00 - Found child process: 15776 Name: node.exe
+2022-01-30 13:41:00 - Stopping process 9252
+2022-01-30 13:41:00 - Send SIGINT 9252
+2022-01-30 13:41:00 - SIGINT to 9252 failed - Killing as fallback
+2022-01-30 13:41:00 - Stopping process 15776
+2022-01-30 13:41:00 - Send SIGINT 15776
+2022-01-30 13:41:00 - SIGINT to 15776 failed - Killing as fallback
+2022-01-30 13:41:00 - Stopping process 5988
+2022-01-30 13:41:00 - Send SIGINT 5988
+2022-01-30 13:41:00 - SIGINT to 5988 failed - Killing as fallback
+2022-01-30 13:41:00 - Finished krishxpress.exe
+2022-01-30 15:41:17 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\node-windows\lib\wrapper.js --file C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js --scriptoptions= --log "KrishXpress wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-01-30 15:41:17 - Started 16136

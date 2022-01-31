@@ -1,0 +1,297 @@
+C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18
+httpServer.createServer(server).listen(server.getPort(), function () {
+                                              ^
+
+TypeError: server.getPort is not a function
+    at Object.<anonymous> (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18:47)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47
+C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18
+httpServer.createServer(server).listen(server.getPort(), function () {
+                                              ^
+
+TypeError: server.getPort is not a function
+    at Object.<anonymous> (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18:47)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47
+C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18
+httpServer.createServer(server).listen(server.getPort(), function () {
+                                              ^
+
+TypeError: server.getPort is not a function
+    at Object.<anonymous> (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18:47)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47
+C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18
+httpServer.createServer(server).listen(server.getPort(), function () {
+                                              ^
+
+TypeError: server.getPort is not a function
+    at Object.<anonymous> (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18:47)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47
+C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18
+httpServer.createServer(server).listen(server.getPort(), function () {
+                                              ^
+
+TypeError: server.getPort is not a function
+    at Object.<anonymous> (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18:47)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47
+C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18
+httpServer.createServer(server).listen(server.getPort(), function () {
+                                              ^
+
+TypeError: server.getPort is not a function
+    at Object.<anonymous> (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18:47)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47
+C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18
+httpServer.createServer(server).listen(server.getPort(), function () {
+                                              ^
+
+TypeError: server.getPort is not a function
+    at Object.<anonymous> (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18:47)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47
+C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18
+httpServer.createServer(server).listen(server.getPort(), function () {
+                                              ^
+
+TypeError: server.getPort is not a function
+    at Object.<anonymous> (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18:47)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47
+C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18
+httpServer.createServer(server).listen(server.getPort(), function () {
+                                              ^
+
+TypeError: server.getPort is not a function
+    at Object.<anonymous> (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18:47)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47
+C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\finalhandler\index.js:256
+  return typeof res.headersSent !== 'boolean'
+                    ^
+
+TypeError: Cannot read properties of undefined (reading 'headersSent')
+    at headersSent (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\finalhandler\index.js:256:21)
+    at C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\finalhandler\index.js:92:17
+    at Function.handle (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\express\lib\application.js:170:5)
+    at app (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\express\lib\express.js:39:9)
+    at Object.<anonymous> (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:3:35)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\finalhandler\index.js:256
+  return typeof res.headersSent !== 'boolean'
+                    ^
+
+TypeError: Cannot read properties of undefined (reading 'headersSent')
+    at headersSent (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\finalhandler\index.js:256:21)
+    at C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\finalhandler\index.js:92:17
+    at Function.handle (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\express\lib\application.js:170:5)
+    at app (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\express\lib\express.js:39:9)
+    at Object.<anonymous> (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:3:35)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\finalhandler\index.js:256
+  return typeof res.headersSent !== 'boolean'
+                    ^
+
+TypeError: Cannot read properties of undefined (reading 'headersSent')
+    at headersSent (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\finalhandler\index.js:256:21)
+    at C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\finalhandler\index.js:92:17
+    at Function.handle (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\express\lib\application.js:170:5)
+    at app (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\express\lib\express.js:39:9)
+    at Object.<anonymous> (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:3:35)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18
+httpServer.createServer(server).listen(server.getPort(), function () {
+                                              ^
+
+TypeError: server.getPort is not a function
+    at Object.<anonymous> (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18:47)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47
+C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18
+httpServer.createServer(server).listen(server.getPort(), function () {
+                                              ^
+
+TypeError: server.getPort is not a function
+    at Object.<anonymous> (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18:47)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47
+C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18
+httpServer.createServer(server).listen(server.getPort(), function () {
+                                              ^
+
+TypeError: server.getPort is not a function
+    at Object.<anonymous> (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18:47)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47
+C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18
+httpServer.createServer(server).listen(server.getPort(), function () {
+                                              ^
+
+TypeError: server.getPort is not a function
+    at Object.<anonymous> (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18:47)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47
+C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18
+httpServer.createServer(server).listen(server.getPort(), function () {
+                                              ^
+
+TypeError: server.getPort is not a function
+    at Object.<anonymous> (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18:47)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47
+C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18
+httpServer.createServer(server).listen(server.getPort(), function () {
+                                              ^
+
+TypeError: server.getPort is not a function
+    at Object.<anonymous> (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:18:47)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47
+C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:21
+console.log(server.getPort());
+                   ^
+
+TypeError: server.getPort is not a function
+    at Object.<anonymous> (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:21:20)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47
+C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:21
+console.log(server.getPort());
+                   ^
+
+TypeError: server.getPort is not a function
+    at Object.<anonymous> (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:21:20)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47
+C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:21
+console.log(server.getPort());
+                   ^
+
+TypeError: server.getPort is not a function
+    at Object.<anonymous> (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:21:20)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47
+C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:27
+server.use(express.static(path.join(__dirname, 'public')));
+           ^
+
+ReferenceError: express is not defined
+    at Object.<anonymous> (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:27:12)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47
+C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:27
+server.use(express.static(path.join(__dirname, 'public')));
+           ^
+
+ReferenceError: express is not defined
+    at Object.<anonymous> (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:27:12)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47
+C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:27
+server.use(express.static(path.join(__dirname, 'public')));
+           ^
+
+ReferenceError: express is not defined
+    at Object.<anonymous> (C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js:27:12)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47

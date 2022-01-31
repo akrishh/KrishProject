@@ -7,7 +7,7 @@
 	<argument>--max_old_space_size=4096</argument>
 	<argument>C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\node-windows\lib\wrapper.js</argument>
 	<argument>--file</argument>
-	<argument>C:\Users\akris\Documents\GitHub\KrishProject\expressjs\server.js</argument>
+	<argument>C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js</argument>
 	<argument>--scriptoptions=</argument>
 	<argument>--log</argument>
 	<argument>KrishXpress wrapper</argument>

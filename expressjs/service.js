@@ -4,7 +4,7 @@ const Service = require('node-windows').Service;
 const svc = new Service({
     name: 'KrishXpress',
     description: 'The KrishXpress is a web server for local application.',
-    script: 'C:\\Users\\akris\\Documents\\GitHub\\KrishProject\\expressjs\\server.js',
+    script: 'C:\\Users\\akris\\Documents\\GitHub\\KrishProject\\expressjs\\src\\app.js',
     nodeOptions: [
         '--harmony',
         '--max_old_space_size=4096'
