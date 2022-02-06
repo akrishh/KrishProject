@@ -9,7 +9,7 @@
   <p>
     <mat-form-field appearance="outline">
       <mat-label>Username:</mat-label>
-      <input type="text" matInput placeholder="Username" [(ngModel)]="loginusername" />
+      <input type="text" matInput placeholder="Username" [(ngModel)]="loginusername" (keyup.enter)="onLogin()" />
     </mat-form-field>
   </p>
   <p>
