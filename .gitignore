@@ -3,3 +3,4 @@ expressjs/daemon/krishxpress.err.log
 expressjs/daemon/krishxpress.out.log
 expressjs/daemon/krishxpress.wrapper.log
 expressjs/node_modules
+expressjs/src/daemon/krishxpress.wrapper.log

@@ -48,3 +48,19 @@
 2022-01-30 13:41:00 - Finished krishxpress.exe
 2022-01-30 15:41:17 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\node-windows\lib\wrapper.js --file C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js --scriptoptions= --log "KrishXpress wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
 2022-01-30 15:41:17 - Started 16136
+2022-02-07 00:02:33 - Stopping krishxpress.exe
+2022-02-07 00:02:33 - ProcessKill 16136
+2022-02-07 00:02:34 - Found child process: 2208 Name: conhost.exe
+2022-02-07 00:02:34 - Found child process: 4028 Name: node.exe
+2022-02-07 00:02:34 - Stopping process 2208
+2022-02-07 00:02:34 - Send SIGINT 2208
+2022-02-07 00:02:34 - SIGINT to 2208 failed - Killing as fallback
+2022-02-07 00:02:34 - Stopping process 4028
+2022-02-07 00:02:34 - Send SIGINT 4028
+2022-02-07 00:02:34 - SIGINT to 4028 failed - Killing as fallback
+2022-02-07 00:02:34 - Stopping process 16136
+2022-02-07 00:02:34 - Send SIGINT 16136
+2022-02-07 00:02:34 - SIGINT to 16136 failed - Killing as fallback
+2022-02-07 00:02:34 - Finished krishxpress.exe
+2022-02-08 17:44:44 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\node-windows\lib\wrapper.js --file C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js --scriptoptions= --log "KrishXpress wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-02-08 17:44:44 - Started 2800

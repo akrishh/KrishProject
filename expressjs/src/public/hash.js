@@ -13,15 +13,7 @@ class StarMain {
         ]);
         this.stars = new Map();
         this.lastActiveStar = -1;
-        // const myPromise = new Promise(resolve => {
-        //     setTimeout(() => {
-        //         resolve('promise captured');
-        //     }, 100);
-        // });
 
-        // myPromise.then(result => {
-        //     console.log('promise: ', result);
-        // });
     }
 
     getDoc(el) {
@@ -38,6 +30,32 @@ class StarMain {
         console.log(Array.of(1, 2, 3));
         const isBelowThreshold = (value) => value < 2;
         console.log(arr1.every(isBelowThreshold));
+
+        const myPromise = new Promise(resolve => {
+            setTimeout(() => {
+                resolve('promise captured');
+            }, 100);
+        });
+
+        myPromise.then(result => {
+            console.log('promise: ', result);
+        });
+
+
+        const linkedlist = {
+            head: {
+                value: 1,
+                next: {
+                    value: 4,
+                    next: {
+                        value: 2,
+                        next: null
+                    }
+                }
+            }
+        }
+
+        console.log(linkedlist);
     }
 
     initStar() {
@@ -87,23 +105,20 @@ class StarMain {
     }
 
     onStarOver(e) {
+        this.mouseOverOut(e, true);
+    }
+
+    // mouseOverOut method sets the star to active when mouse is over and inactive when mouse is out
+    // params: e - event and isHover - true when mouse is over and false when mouse is out
+    mouseOverOut(e, isHover) {
         const propStar = this.propMap.get('star');
         for (const [k, v] of this.stars) {
-            if (k <= e.target.counter)
-                v.img.style.opacity = propStar.fullOpacity;
-            else
-                v.img.style.opacity = propStar.defaultOpacity;
+            v.img.style.opacity = (isHover) ? ((k <= e.target.counter) ? (propStar.fullOpacity) : (propStar.defaultOpacity)) : ((v.active === true) ? (propStar.fullOpacity) : (propStar.defaultOpacity));
         }
     }
 
     onStarOut(e) {
-        const propStar = this.propMap.get('star');
-        for (const [k, v] of this.stars) {
-            if (v.active === true)
-                v.img.style.opacity = propStar.fullOpacity;
-            else
-                v.img.style.opacity = propStar.defaultOpacity;
-        }
+        this.mouseOverOut(e, false);
     }
 
 }
@@ -111,4 +126,4 @@ class StarMain {
 const starMain = new StarMain(5);
 starMain.initStar();
 
-// starMain.experiment();
+starMain.experiment();
