@@ -1,7 +1,7 @@
 class Moment {
     constructor() {
         this.timer = 0;
-        this.stopAfter = 70;
+        this.stopAfter = 20;
         this.interval = setInterval(() => {
             if (this.timer > this.stopAfter) {
                 this.stopTimer();
@@ -29,7 +29,7 @@ class Moment {
     }
 
     stopTimer() {
-        // console.log('Stop Updating Timer called....')
+        console.log('Stop Updating Timer called....')
         clearInterval(this.interval);
     }
 }
@@ -102,5 +102,5 @@ class DateMath {
     }
 }
 
-const moment = new Moment();
-moment.triggerTimer('06/15/2014', 10);
+// const moment = new Moment();
+// moment.triggerTimer('06/15/2014', 10);

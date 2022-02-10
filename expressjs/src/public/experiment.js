@@ -46,39 +46,6 @@ ll.add(333);
 console.log('ll >> ', ll);
 
 
-class BubbleSort {
-    constructor(arr) {
-        this.arr = arr;
-    }
-
-    bSort() {
-        let thisArray = this.arr;
-        let len = thisArray.length;
-
-        let swapped = false;
-
-        for (let i = 0; i < len; i++) {
-            for (let j = 0; j < len; j++) {
-                if (thisArray[j] > thisArray[j + 1]) {
-                    let temp = thisArray[j];
-                    thisArray[j] = thisArray[j + 1];
-                    thisArray[j + 1] = temp;
-                    swapped = true;
-                }
-            }
-            if (!swapped) {
-                break;
-            }
-        }
-
-        console.log(thisArray);
-    }
-}
-
-const inputArray = new Array(4, 3, 5, 8, 6, 7, 2, 0, 1);
-const bSortObj = new BubbleSort(inputArray);
-bSortObj.bSort();
-
 class TreeNode {
     constructor(value) {
         this.value = value;
@@ -254,7 +221,6 @@ class Stack {
         }
 
         let reverStr = '';
-
         while (stackArr.length > 0) {
             reverStr += stackArr.pop();
         }
@@ -264,9 +230,7 @@ class Stack {
 }
 
 const stackObj = new Stack('JavaScript');
-
-console.log(stackObj.reverseString());
-
+console.log(`Original String is 'JavaScript' >>> ${stackObj.reverseString()}`);
 
 class Queue {
     constructor() {
