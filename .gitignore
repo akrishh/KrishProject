@@ -4,3 +4,9 @@ expressjs/daemon/krishxpress.out.log
 expressjs/daemon/krishxpress.wrapper.log
 expressjs/node_modules
 expressjs/src/daemon/krishxpress.wrapper.log
+expressjs/src/daemon/krishxpress.err.log
+expressjs/src/daemon/krishxpress.err.log.bak
+expressjs/src/daemon/krishxpress.out.log.bak
+expressjs/src/daemon/krishxpress.err.log
+expressjs/src/daemon/krishxpress.out.log
+expressjs/src/daemon/krishxpress.wrapper.log

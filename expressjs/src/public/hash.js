@@ -20,44 +20,6 @@ class StarMain {
         return document.getElementById(el)
     }
 
-    experiment() {
-        const arr1 = new Array(1, 2, 3, 4);
-        const reducer = (a, b) => a * b;
-        console.log('arr1 >>', arr1.reduce(reducer));
-        let idx = 1;
-        console.log(`This is a sample ${arr1.at(idx)}`);
-        console.log(arr1);
-        console.log(Array.of(1, 2, 3));
-        const isBelowThreshold = (value) => value < 2;
-        console.log(arr1.every(isBelowThreshold));
-
-        const myPromise = new Promise(resolve => {
-            setTimeout(() => {
-                resolve('promise captured');
-            }, 100);
-        });
-
-        myPromise.then(result => {
-            console.log('promise: ', result);
-        });
-
-
-        const linkedlist = {
-            head: {
-                value: 1,
-                next: {
-                    value: 4,
-                    next: {
-                        value: 2,
-                        next: null
-                    }
-                }
-            }
-        }
-
-        console.log(linkedlist);
-    }
-
     initStar() {
         const star = this.propMap.get('star');
         for (let i = 0; i < star.starCount; i++) {
@@ -75,6 +37,7 @@ class StarMain {
             });
             this.getDoc('container').appendChild(this.img);
             this.img.setAttribute('data-active', 'false');
+            this.img.setAttribute('alt', 'starimage-' + i);
             this.img.addEventListener('click', this.onStarClick.bind(this));
             this.img.addEventListener('mouseover', this.onStarOver.bind(this));
             this.img.addEventListener('mouseout', this.onStarOut.bind(this));
@@ -125,5 +88,3 @@ class StarMain {
 
 const starMain = new StarMain(5);
 starMain.initStar();
-
-starMain.experiment();
