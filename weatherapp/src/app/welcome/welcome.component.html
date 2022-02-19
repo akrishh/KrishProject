@@ -1,1 +1,41 @@
-<p>welcome works!</p>
+<p>{{welcomeText}}</p>
+
+<div *ngIf="displayText; then thenBlock; else elseBlock">
+</div>
+<br>
+
+<ng-template #thenBlock>
+  THEN BLOCK
+  <div>
+    Textbox: <br>
+    <input type="text" [(ngModel)]="valueofText" id={{idValue}} bind-disabled=isDisabled />
+  </div>
+</ng-template>
+<ng-template #elseBlock>
+  ELSE BLOCK
+  <div>
+    Label: <br>{{valueofText}}
+  </div>
+</ng-template>
+
+<!-- <div [ngSwitch]="color">
+  <div *ngSwitchCase="'red'">
+    <p style="color:red">Red</p>
+  </div>
+  <div *ngSwitchCase="'blue'">
+    <p style="color:blue">Blue</p>
+  </div>
+  <div *ngSwitchDefault>
+    <p style="color:orange">Orange</p>
+  </div>
+</div>
+
+<div *ngFor="let c of colors; even as e">
+  <h2>{{e}} {{c}}</h2>
+</div> -->
+
+
+{{name | uppercase }}
+<br>
+
+<button (click)="fireEvent()">send event</button>

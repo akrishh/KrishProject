@@ -102,5 +102,5 @@ class DateMath {
     }
 }
 
-// const moment = new Moment();
-// moment.triggerTimer('06/15/2014', 10);
+const moment = new Moment();
+moment.triggerTimer('06/15/2014', 24);

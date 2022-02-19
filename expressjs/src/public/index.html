@@ -6,51 +6,37 @@
     <title>Krish - App</title>
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src  krishxpress:8080 * nonce-91152152cb04a5a1eb80b1574c714ebf641e99b4fe6bd70cdb40dd3b1b4a2849; img-src http://krishxpress:8080/*; child-src
         'none';"> -->
-
-    <style nonce="91152152cb04a5a1eb80b1574c714ebf641e99b4fe6bd70cdb40dd3b1b4a2849">
-        * {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        html,
-        body {
-            height: 100%;
-        }
-
-        img {
-            -webkit-filter: drop-shadow(1px 1px 0 rgb(43, 43, 43)) hue-rotate(334deg);
-            filter: drop-shadow(1px 1px 0 rgb(43, 43, 43)) hue-rotate(334deg);
-        }
-
-        img[data-active="true"] {
-            -webkit-filter: drop-shadow(1px 1px 0 rgb(43, 43, 43)) drop-shadow(1px 1px 0 rgb(153, 153, 153)) drop-shadow(1px -1px 0 rgb(155, 155, 155)) hue-rotate(334deg);
-            filter: drop-shadow(1px 1px 0 rgb(43, 43, 43)) drop-shadow(1px -1px 0 rgb(153, 153, 153)) drop-shadow(1px 1px 1px rgb(155, 155, 155)) hue-rotate(334deg);
-        }
-    </style>
+    <link nonce="91152152cb04a5a1eb80b1574c714ebf641e99b4fe6bd70cdb40dd3b1b4a2849" href="./css/all.css"
+        rel="stylesheet">
 </head>
 
 <body>
     <h1>
-        <font color="navy">KrishXpress</font> application server is up and running....
+        Welcome to
+        <span style="color:rgb(249, 255, 167)">KrishXpress</span>
+        application server
     </h1>
-    <p>
-        Please provide your Stars for KrishXpress
-    </p>
+
+    <div id="body_container"></div>
     <div id="container"></div>
     <script nonce="91152152cb04a5a1eb80b1574c714ebf641e99b4fe6bd70cdb40dd3b1b4a2849">
         const cookies = document.cookie;
-        console.log(cookies);
+        // console.log(cookies);
         const genRandHex = size => [...Array(size)].map(() => Math.floor(Math.random() * 16).toString(16)).join('')
         // console.log('rand >>>', genRandHex(32));
     </script>
     <div id="result"></div>
+    <!-- 
     <script src="hash.js"></script>
     <script src="moment.js"></script>
     <script src="experiment.js"></script>
-    <script src="algorithms.js"></script>
+    <script src="algorithms.js"></script> 
+    -->
+    <script src="loggers.js"></script>
 
 </body>
 

@@ -2,5 +2,8 @@
     "eslint.format.enable": true,
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "formulahendry.code-runner"
+    "editor.defaultFormatter": "formulahendry.code-runner",
+    "[css]": {
+        "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+    }
 }

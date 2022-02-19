@@ -16,11 +16,18 @@ class StarMain {
 
     }
 
+    createEl(el) {
+        return document.createElement(el)
+    }
+
     getDoc(el) {
         return document.getElementById(el)
     }
 
     initStar() {
+        let pTag = this.createEl('p');
+        pTag.innerHTML = 'Please provide your Stars for KrishXpress';
+        this.getDoc('body_container').appendChild(pTag);
         const star = this.propMap.get('star');
         for (let i = 0; i < star.starCount; i++) {
             this.img = document.createElement(star.element);

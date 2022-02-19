@@ -1,0 +1,22 @@
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: black;
+}
+
+img {
+    -webkit-filter: drop-shadow(1px 1px 0 rgb(43, 43, 43)) hue-rotate(334deg);
+    filter: drop-shadow(1px 1px 0 rgb(43, 43, 43)) hue-rotate(334deg);
+}
+
+img[data-active="true"] {
+    -webkit-filter: drop-shadow(1px 1px 0 rgb(43, 43, 43)) drop-shadow(1px 1px 0 rgb(153, 153, 153))
+        drop-shadow(1px -1px 0 rgb(155, 155, 155)) hue-rotate(334deg);
+    filter: drop-shadow(1px 1px 0 rgb(43, 43, 43)) drop-shadow(1px -1px 0 rgb(153, 153, 153))
+        drop-shadow(1px 1px 1px rgb(155, 155, 155)) hue-rotate(334deg);
+}

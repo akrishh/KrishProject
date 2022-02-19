@@ -152,3 +152,101 @@ Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInter
    at winsw.WrapperService.OnShutdown()
 2022-02-09 12:39:23 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\node-windows\lib\wrapper.js --file C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js --scriptoptions= --log "KrishXpress wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
 2022-02-09 12:39:23 - Started 5224
+2022-02-10 10:34:33 - Stopping krishxpress.exe
+2022-02-10 10:34:33 - ProcessKill 5224
+2022-02-10 10:34:33 - Found child process: 5232 Name: conhost.exe
+2022-02-10 10:34:33 - Found child process: 5648 Name: node.exe
+2022-02-10 10:34:34 - Stopping process 5232
+2022-02-10 10:34:34 - Send SIGINT 5232
+2022-02-10 10:34:34 - SIGINT to 5232 failed - Killing as fallback
+2022-02-10 10:34:34 - Stopping process 5648
+2022-02-10 10:34:34 - Send SIGINT 5648
+2022-02-10 10:34:34 - SIGINT to 5648 failed - Killing as fallback
+2022-02-10 10:34:34 - Stopping process 5224
+2022-02-10 10:34:34 - Send SIGINT 5224
+2022-02-10 10:34:34 - SIGINT to 5224 failed - Killing as fallback
+2022-02-10 10:34:34 - Finished krishxpress.exe
+2022-02-10 10:34:35 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\node-windows\lib\wrapper.js --file C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js --scriptoptions= --log "KrishXpress wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-02-10 10:34:35 - Started 15276
+2022-02-13 18:26:47 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\node-windows\lib\wrapper.js --file C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js --scriptoptions= --log "KrishXpress wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-02-13 18:26:47 - Started 5200
+2022-02-13 21:48:32 - Stopping krishxpress.exe
+2022-02-13 21:48:32 - ProcessKill 5200
+2022-02-13 21:48:33 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-02-13 21:48:59 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\node-windows\lib\wrapper.js --file C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js --scriptoptions= --log "KrishXpress wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-02-13 21:48:59 - Started 5316
+2022-02-13 21:50:51 - Stopping krishxpress.exe
+2022-02-13 21:50:51 - ProcessKill 5316
+2022-02-13 21:50:52 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-02-13 21:51:18 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\node-windows\lib\wrapper.js --file C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js --scriptoptions= --log "KrishXpress wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-02-13 21:51:19 - Started 5412
+2022-02-13 22:04:10 - Stopping krishxpress.exe
+2022-02-13 22:04:10 - ProcessKill 5412
+2022-02-13 22:04:10 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-02-13 22:04:36 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\node-windows\lib\wrapper.js --file C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js --scriptoptions= --log "KrishXpress wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-02-13 22:04:36 - Started 5352
+2022-02-14 14:11:53 - Stopping krishxpress.exe
+2022-02-14 14:11:53 - ProcessKill 5352
+2022-02-14 14:11:54 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-02-14 14:12:22 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\node-windows\lib\wrapper.js --file C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js --scriptoptions= --log "KrishXpress wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-02-14 14:12:22 - Started 4384
+2022-02-18 07:03:37 - Stopping krishxpress.exe
+2022-02-18 07:03:37 - ProcessKill 4384
+2022-02-18 07:03:37 - Found child process: 5056 Name: conhost.exe
+2022-02-18 07:03:37 - Found child process: 5648 Name: node.exe
+2022-02-18 07:03:38 - Stopping process 5056
+2022-02-18 07:03:38 - Send SIGINT 5056
+2022-02-18 07:03:38 - SIGINT to 5056 failed - Killing as fallback
+2022-02-18 07:03:38 - Stopping process 5648
+2022-02-18 07:03:38 - Send SIGINT 5648
+2022-02-18 07:03:38 - SIGINT to 5648 failed - Killing as fallback
+2022-02-18 07:03:38 - Stopping process 4384
+2022-02-18 07:03:38 - Send SIGINT 4384
+2022-02-18 07:03:38 - SIGINT to 4384 failed - Killing as fallback
+2022-02-18 07:03:38 - Finished krishxpress.exe
+2022-02-18 07:03:39 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\akris\Documents\GitHub\KrishProject\expressjs\node_modules\node-windows\lib\wrapper.js --file C:\Users\akris\Documents\GitHub\KrishProject\expressjs\src\app.js --scriptoptions= --log "KrishXpress wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-02-18 07:03:39 - Started 5640

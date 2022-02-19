@@ -10,8 +10,11 @@ import { HttpClient } from '@angular/common/http';
 
 export class AppComponent implements OnInit {
 
-  welcomeText = "Welcome";
-  todo: object = {};
+  public welcomeText: string = "Welcome";
+  public title: string = "Title of the application";
+  public todo: object = {};
+  public name: string = "Parent To child";
+  public message: any;
 
   constructor(
     private router: Router,
@@ -20,7 +23,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.router.navigate(['login']);
+    this.router.navigate(['welcome']);
     this.http.get('https://jsonplaceholder.typicode.com/posts?userId=1').subscribe(
       x => {
         return this.todo = x;
