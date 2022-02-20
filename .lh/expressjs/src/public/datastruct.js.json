@@ -1,0 +1,58 @@
+{
+    "sourceFile": "expressjs/src/public/datastruct.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1645316733349,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1645316741266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-const a = [1 2 3 7 5]\n\\ No newline at end of file\n+const a = [1, 2, 3, 7,5]\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645316748120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-const a = [1, 2, 3, 7,5]\n\\ No newline at end of file\n+const a = new Array \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645316760159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n-const a = new Array \n\\ No newline at end of file\n+const a = new Array(1, 2, 3, 7, 5);\r\n+// 5 12\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645316767102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,13 @@\n const a = new Array(1, 2, 3, 7, 5);\r\n-// 5 12\n\\ No newline at end of file\n+// 5 12\r\n+\r\n+class Solution {\r\n+    //Function to find a continuous sub-array which adds up to a given number.\r\n+    subarraySum(arr, n, s) {\r\n+        let i = 0;\r\n+        const\r\n+        const val = arr.reduce((cv, pv) => cv + pv, i);\r\n+        console.log(val);\r\n+        return val;\r\n+    }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645316840948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,8 @@\n class Solution {\r\n     //Function to find a continuous sub-array which adds up to a given number.\r\n     subarraySum(arr, n, s) {\r\n         let i = 0;\r\n-        const\r\n         const val = arr.reduce((cv, pv) => cv + pv, i);\r\n         console.log(val);\r\n         return val;\r\n     }\r\n"
+                },
+                {
+                    "date": 1645316864005,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,6 @@\n         const val = arr.reduce((cv, pv) => cv + pv, i);\r\n         console.log(val);\r\n         return val;\r\n     }\r\n-}\n\\ No newline at end of file\n+}\r\n+\r\n"
+                },
+                {
+                    "date": 1645316873580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,4 +10,5 @@\n         return val;\r\n     }\r\n }\r\n \r\n+const soln = new Solution();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645316882022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,5 +10,6 @@\n         return val;\r\n     }\r\n }\r\n \r\n-const soln = new Solution();\n\\ No newline at end of file\n+const soln = new Solution();\r\n+soln()\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645316888865,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,5 +11,5 @@\n     }\r\n }\r\n \r\n const soln = new Solution();\r\n-soln(a, 5, 12)\n\\ No newline at end of file\n+soln(a, 5, 12);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645316905865,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,5 +11,5 @@\n     }\r\n }\r\n \r\n const soln = new Solution();\r\n-.(a, 5, 12);\n\\ No newline at end of file\n+soln(a, 5, 12);\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1645316733349,
+            "name": "Commit-0",
+            "content": "const a = [1 2 3 7 5]"
+        }
+    ]
+}

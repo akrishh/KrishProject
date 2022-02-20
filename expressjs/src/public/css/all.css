@@ -20,3 +20,13 @@ img[data-active="true"] {
     filter: drop-shadow(1px 1px 0 rgb(43, 43, 43)) drop-shadow(1px -1px 0 rgb(153, 153, 153))
         drop-shadow(1px 1px 1px rgb(155, 155, 155)) hue-rotate(334deg);
 }
+
+.rc {
+    color: red;
+    font-weight: bold;
+}
+
+.gc {
+    color: green;
+    font-weight: bold;
+}

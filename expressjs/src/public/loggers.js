@@ -1,4 +1,3 @@
-console.log('loggers loaded....');
 const inputJSON = {
     "data": {
         "loggers": [{
@@ -30,49 +29,53 @@ const inputJSON = {
 }
 
 class Logger {
-    constructor() {
+    constructor(data) {
         this.dataMap = new Map();
+        this.responses = (a, b, state) => {
+            let invalidTxt = 'invalid';
+            if (state === invalidTxt)
+                return `The given input URL '${a}' or '${b}' is <span class="rc">${this.toUpper(invalidTxt)}</span>.`;
+            else {
+                let flag = this.dataMap.get(a).ancestors.filter(e => e === b).length > 0;
+                return `The LINK between '${a}' and '${b}' is <span class="${flag ? 'gc' : 'rc'}">${this.toUpper(flag)}</span>.`;
+            }
+        }
+        this.toUpper = (param) => param.toString().toUpperCase();
+        this.getParent = (p) => this.dataMap.get(p);
+        this.getChild = (p, data) => data.loggers.filter(e => p.url === e.parent);
+        this.isUndefined = (param) => typeof param === "undefined";
+        this.getDoc = (el) => document.getElementById(el);
 
-    }
-
-    init(data) {
-        this.allChilds = new Array();
         data.loggers.forEach(el => {
-            const v = this.getChild(el, data);
-            // if (v.length > 0) {
-            //     this.getRecursiveChild(v, data);
-            // }
-            // console.log('allChilds >> ', this.allChilds);
+            let ancestors = new Array();
+            this.collectAncestors(el, ancestors, data);
+            ancestors = [...new Set(ancestors)];
+            // console.log(el.url, ' >> ancestors >> ', ancestors);
+            const c = this.getChild(el, data);
             this.dataMap.set(el.url, {
-                child: v,
-                hasLink: v.length > 0
+                child: c,
+                parent: el.parent,
+                ancestors: ancestors,
+                hasChild: c.length > 0
             });
         });
-        console.log(this.dataMap);
+        // console.log('dataMap >>>', this.dataMap);
     }
 
-    getRecursiveChild(v, data) {
-        v.forEach(vEl => {
-            const child = this.getChild(vEl, data);
-            if (child.length > 0)
-                this.allChilds.push(child);
-        });
-    }
-
-    getChild(p, data) {
-        return data.loggers.filter(e => {
-            return p.url === e.parent
-        });
+    collectAncestors(el, arr, data) {
+        if (!this.isUndefined(el.parent) && el.parent !== "NULL")
+            arr.push(el.parent);
+        let p = this.getParent(el.parent);
+        if (!this.isUndefined(p) && p !== "NULL" && !this.isUndefined(p.parent) && p.parent !== "NULL") {
+            arr.push(p.parent);
+            this.collectAncestors(p, arr, data);
+        }
     }
 
     validate(a, b) {
-        if (this.dataMap.get(a) === undefined) {
-            return "invalid URL";
-        }
-        return ((this.dataMap.get(a).child.filter(e => e.url === b)).length > 0);
+        return this.getDoc('loggers').innerHTML = (this.isUndefined(this.dataMap.get(a)) || this.isUndefined(this.dataMap.get(b))) ? this.responses(a, b, 'invalid') : this.responses(a, b, 'validate');
     }
 }
 
-const log = new Logger();
-log.init(inputJSON.data);
-console.log('Result >> ', log.validate('/aboutcompany', '/home'));
+const log = new Logger(inputJSON.data);
+console.log(log.validate('/aboutcompany', '/aboutus'));

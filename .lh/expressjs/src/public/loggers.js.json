@@ -1,0 +1,118 @@
+{
+    "sourceFile": "expressjs/src/public/loggers.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 25,
+            "patches": [
+                {
+                    "date": 1645306623676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1645306750352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,5 +96,5 @@\n }\r\n \r\n const log = new Logger();\r\n log.init(inputJSON.data);\r\n-log.validate('/aboutusmor', '/home');\n\\ No newline at end of file\n+log.validate('/aboutcompany', '/home');\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645306755783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,5 +96,5 @@\n }\r\n \r\n const log = new Logger();\r\n log.init(inputJSON.data);\r\n-log.validate('/aboutcompany', '/home');\n\\ No newline at end of file\n+log.validate('/aboutcompany', '/aboutus');\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645306817462,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,8 +90,9 @@\n         if (this.isDefined(this.dataMap.get(a)) || this.isDefined(this.dataMap.get(b))) {\r\n             this.getDoc('loggers').innerHTML = result = `The given input URL ${a} or ${b} is <span class=\"rc\">${invalidTxt.toString().toUpperCase()}</span>.`;\r\n             return false;\r\n         }\r\n+        console.log((this.dataMap.get(a).parents.filter(e => e === b)))\r\n         this.getDoc('loggers').innerHTML = result = `The link between '${a}' and '${b}' is <span class=\"gc\">${((this.dataMap.get(a).parents.filter(e => e === b)).length > 0).toString().toUpperCase()}</span>`;\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1645306829631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,9 +90,9 @@\n         if (this.isDefined(this.dataMap.get(a)) || this.isDefined(this.dataMap.get(b))) {\r\n             this.getDoc('loggers').innerHTML = result = `The given input URL ${a} or ${b} is <span class=\"rc\">${invalidTxt.toString().toUpperCase()}</span>.`;\r\n             return false;\r\n         }\r\n-        console.log((this.dataMap.get(a).parents.filter(e => e === b)))\r\n+        console.log((this.dataMap.get(a).parents.//));\r\n         this.getDoc('loggers').innerHTML = result = `The link between '${a}' and '${b}' is <span class=\"gc\">${((this.dataMap.get(a).parents.filter(e => e === b)).length > 0).toString().toUpperCase()}</span>`;\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1645306867718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n             this.getRecursiveParent(p, arr, data);\r\n         }\r\n     }\r\n \r\n-    getParent(p, data) {\r\n+    getParent(p) {\r\n         return this.dataMap.get(p);\r\n     }\r\n \r\n     getChild(p, data) {\r\n@@ -90,9 +90,9 @@\n         if (this.isDefined(this.dataMap.get(a)) || this.isDefined(this.dataMap.get(b))) {\r\n             this.getDoc('loggers').innerHTML = result = `The given input URL ${a} or ${b} is <span class=\"rc\">${invalidTxt.toString().toUpperCase()}</span>.`;\r\n             return false;\r\n         }\r\n-        console.log((this.dataMap.get(a).parents.//));\r\n+        console.log((this.dataMap.get(a).parents));\r\n         this.getDoc('loggers').innerHTML = result = `The link between '${a}' and '${b}' is <span class=\"gc\">${((this.dataMap.get(a).parents.filter(e => e === b)).length > 0).toString().toUpperCase()}</span>`;\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1645306895009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n \r\n     getRecursiveParent(el, arr, data) {\r\n         if (this.isDefined(el.parent) && el.parent !== \"NULL\")\r\n             arr.push(el.parent);\r\n-        let p = this.getParent(el.parent, data);\r\n+        let p = this.getParent(el.parent);\r\n         if (!this.isDefined(p) && p !== \"NULL\" && !this.isDefined(p.parent) && p.parent !== \"NULL\") {\r\n             arr.push(p.parent);\r\n             this.getRecursiveParent(p, arr, data);\r\n         }\r\n"
+                },
+                {
+                    "date": 1645306907824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n                 parents: parents,\r\n                 hasChild: v.length > 0\r\n             });\r\n         });\r\n-        // console.log('dataMap >>>', this.dataMap);\r\n+        console.log('dataMap >>>', this.dataMap);\r\n     }\r\n \r\n     getRecursiveParent(el, arr, data) {\r\n         if (this.isDefined(el.parent) && el.parent !== \"NULL\")\r\n"
+                },
+                {
+                    "date": 1645306982299,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n         data.loggers.forEach(el => {\r\n             let parents = new Array();\r\n             this.getRecursiveParent(el, parents, data);\r\n             parents = [...new Set(parents)];\r\n-            // console.log(el.url, ' >> parents >> ', parents);\r\n+            console.log(el.url, ' >> parents >> ', parents);\r\n             const v = this.getChild(el, data);\r\n             this.dataMap.set(el.url, {\r\n                 child: v,\r\n                 parent: el.parent,\r\n@@ -56,8 +56,9 @@\n         console.log('dataMap >>>', this.dataMap);\r\n     }\r\n \r\n     getRecursiveParent(el, arr, data) {\r\n+        console.log(el.parent)\r\n         if (this.isDefined(el.parent) && el.parent !== \"NULL\")\r\n             arr.push(el.parent);\r\n         let p = this.getParent(el.parent);\r\n         if (!this.isDefined(p) && p !== \"NULL\" && !this.isDefined(p.parent) && p.parent !== \"NULL\") {\r\n"
+                },
+                {
+                    "date": 1645306993020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n         console.log('dataMap >>>', this.dataMap);\r\n     }\r\n \r\n     getRecursiveParent(el, arr, data) {\r\n-        console.log(el.parent)\r\n+        console.log(el);\r\n         if (this.isDefined(el.parent) && el.parent !== \"NULL\")\r\n             arr.push(el.parent);\r\n         let p = this.getParent(el.parent);\r\n         if (!this.isDefined(p) && p !== \"NULL\" && !this.isDefined(p.parent) && p.parent !== \"NULL\") {\r\n"
+                },
+                {
+                    "date": 1645307006602,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -91,9 +91,9 @@\n         if (this.isDefined(this.dataMap.get(a)) || this.isDefined(this.dataMap.get(b))) {\r\n             this.getDoc('loggers').innerHTML = result = `The given input URL ${a} or ${b} is <span class=\"rc\">${invalidTxt.toString().toUpperCase()}</span>.`;\r\n             return false;\r\n         }\r\n-        console.log((this.dataMap.get(a).parents));\r\n+        // console.log((this.dataMap.get(a).parents));\r\n         this.getDoc('loggers').innerHTML = result = `The link between '${a}' and '${b}' is <span class=\"gc\">${((this.dataMap.get(a).parents.filter(e => e === b)).length > 0).toString().toUpperCase()}</span>`;\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1645307016883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n         console.log('dataMap >>>', this.dataMap);\r\n     }\r\n \r\n     getRecursiveParent(el, arr, data) {\r\n-        console.log(el);\r\n+        console.log('el >>', el);\r\n         if (this.isDefined(el.parent) && el.parent !== \"NULL\")\r\n             arr.push(el.parent);\r\n         let p = this.getParent(el.parent);\r\n         if (!this.isDefined(p) && p !== \"NULL\" && !this.isDefined(p.parent) && p.parent !== \"NULL\") {\r\n"
+                },
+                {
+                    "date": 1645307053627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n         console.log('dataMap >>>', this.dataMap);\r\n     }\r\n \r\n     getRecursiveParent(el, arr, data) {\r\n-        console.log('el >>', el);\r\n+        console.log('el >>', this.isDefined(el.parent));\r\n         if (this.isDefined(el.parent) && el.parent !== \"NULL\")\r\n             arr.push(el.parent);\r\n         let p = this.getParent(el.parent);\r\n         if (!this.isDefined(p) && p !== \"NULL\" && !this.isDefined(p.parent) && p.parent !== \"NULL\") {\r\n"
+                },
+                {
+                    "date": 1645307075043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n         console.log('dataMap >>>', this.dataMap);\r\n     }\r\n \r\n     getRecursiveParent(el, arr, data) {\r\n-        console.log('el >>', this.isDefined(el.parent));\r\n+        console.log('el >>', el.parent);\r\n         if (this.isDefined(el.parent) && el.parent !== \"NULL\")\r\n             arr.push(el.parent);\r\n         let p = this.getParent(el.parent);\r\n         if (!this.isDefined(p) && p !== \"NULL\" && !this.isDefined(p.parent) && p.parent !== \"NULL\") {\r\n"
+                },
+                {
+                    "date": 1645307081472,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n         console.log('dataMap >>>', this.dataMap);\r\n     }\r\n \r\n     getRecursiveParent(el, arr, data) {\r\n-        console.log('el >>', el.parent);\r\n+        console.log('el >>', type el.parent);\r\n         if (this.isDefined(el.parent) && el.parent !== \"NULL\")\r\n             arr.push(el.parent);\r\n         let p = this.getParent(el.parent);\r\n         if (!this.isDefined(p) && p !== \"NULL\" && !this.isDefined(p.parent) && p.parent !== \"NULL\") {\r\n"
+                },
+                {
+                    "date": 1645307089805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,10 +56,10 @@\n         console.log('dataMap >>>', this.dataMap);\r\n     }\r\n \r\n     getRecursiveParent(el, arr, data) {\r\n-        console.log('el >>', type el.parent);\r\n-        if (this.isDefined(el.parent) && el.parent !== \"NULL\")\r\n+        console.log('el >>', typeof el.parent);\r\n+        if (!this.isDefined(el.parent) && el.parent !== \"NULL\")\r\n             arr.push(el.parent);\r\n         let p = this.getParent(el.parent);\r\n         if (!this.isDefined(p) && p !== \"NULL\" && !this.isDefined(p.parent) && p.parent !== \"NULL\") {\r\n             arr.push(p.parent);\r\n"
+                },
+                {
+                    "date": 1645307112198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,9 +87,9 @@\n \r\n     validate(a, b) {\r\n         let result,\r\n             invalidTxt = 'invalid';\r\n-        if (this.isDefined(this.dataMap.get(a)) || this.isDefined(this.dataMap.get(b))) {\r\n+        if (this.isUnDefined(this.dataMap.get(a)) || this.isDefined(this.dataMap.get(b))) {\r\n             this.getDoc('loggers').innerHTML = result = `The given input URL ${a} or ${b} is <span class=\"rc\">${invalidTxt.toString().toUpperCase()}</span>.`;\r\n             return false;\r\n         }\r\n         // console.log((this.dataMap.get(a).parents));\r\n"
+                },
+                {
+                    "date": 1645307118650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,9 +76,9 @@\n             return p.url === e.parent;\r\n         });\r\n     }\r\n \r\n-    isDefined(param) {\r\n+    isUndefined(param) {\r\n         return (typeof param === \"undefined\");\r\n     }\r\n \r\n     getDoc(el) {\r\n@@ -87,9 +87,9 @@\n \r\n     validate(a, b) {\r\n         let result,\r\n             invalidTxt = 'invalid';\r\n-        if (this.isUnDefined(this.dataMap.get(a)) || this.isDefined(this.dataMap.get(b))) {\r\n+        if (this.isUndefined(this.dataMap.get(a)) || this.isUndefined(this.dataMap.get(b))) {\r\n             this.getDoc('loggers').innerHTML = result = `The given input URL ${a} or ${b} is <span class=\"rc\">${invalidTxt.toString().toUpperCase()}</span>.`;\r\n             return false;\r\n         }\r\n         // console.log((this.dataMap.get(a).parents));\r\n"
+                },
+                {
+                    "date": 1645307123968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,10 +56,9 @@\n         console.log('dataMap >>>', this.dataMap);\r\n     }\r\n \r\n     getRecursiveParent(el, arr, data) {\r\n-        console.log('el >>', typeof el.parent);\r\n-        if (!this.isDefined(el.parent) && el.parent !== \"NULL\")\r\n+        if (!this.isUndefined(el.parent) && el.parent !== \"NULL\")\r\n             arr.push(el.parent);\r\n         let p = this.getParent(el.parent);\r\n         if (!this.isDefined(p) && p !== \"NULL\" && !this.isDefined(p.parent) && p.parent !== \"NULL\") {\r\n             arr.push(p.parent);\r\n"
+                },
+                {
+                    "date": 1645307133718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n     getRecursiveParent(el, arr, data) {\r\n         if (!this.isUndefined(el.parent) && el.parent !== \"NULL\")\r\n             arr.push(el.parent);\r\n         let p = this.getParent(el.parent);\r\n-        if (!this.isDefined(p) && p !== \"NULL\" && !this.isDefined(p.parent) && p.parent !== \"NULL\") {\r\n+        if (!this.isUndefined(p) && p !== \"NULL\" && !this.isUndefined(p.parent) && p.parent !== \"NULL\") {\r\n             arr.push(p.parent);\r\n             this.getRecursiveParent(p, arr, data);\r\n         }\r\n     }\r\n"
+                },
+                {
+                    "date": 1645307156770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n             let parents = new Array();\r\n             this.getRecursiveParent(el, parents, data);\r\n             parents = [...new Set(parents)];\r\n             console.log(el.url, ' >> parents >> ', parents);\r\n-            const v = this.getChild(el, data);\r\n+            // const v = this.getChild(el, data);\r\n             this.dataMap.set(el.url, {\r\n                 child: v,\r\n                 parent: el.parent,\r\n                 parents: parents,\r\n"
+                },
+                {
+                    "date": 1645307177538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n             let parents = new Array();\r\n             this.getRecursiveParent(el, parents, data);\r\n             parents = [...new Set(parents)];\r\n             console.log(el.url, ' >> parents >> ', parents);\r\n-            // const v = this.getChild(el, data);\r\n+            const v = this.getChild(el, data);\r\n             this.dataMap.set(el.url, {\r\n                 child: v,\r\n                 parent: el.parent,\r\n                 parents: parents,\r\n"
+                },
+                {
+                    "date": 1645307187503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,18 +43,18 @@\n         data.loggers.forEach(el => {\r\n             let parents = new Array();\r\n             this.getRecursiveParent(el, parents, data);\r\n             parents = [...new Set(parents)];\r\n-            console.log(el.url, ' >> parents >> ', parents);\r\n+            // console.log(el.url, ' >> parents >> ', parents);\r\n             const v = this.getChild(el, data);\r\n             this.dataMap.set(el.url, {\r\n                 child: v,\r\n                 parent: el.parent,\r\n                 parents: parents,\r\n                 hasChild: v.length > 0\r\n             });\r\n         });\r\n-        console.log('dataMap >>>', this.dataMap);\r\n+        // console.log('dataMap >>>', this.dataMap);\r\n     }\r\n \r\n     getRecursiveParent(el, arr, data) {\r\n         if (!this.isUndefined(el.parent) && el.parent !== \"NULL\")\r\n"
+                },
+                {
+                    "date": 1645307322511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,13 +31,9 @@\n \r\n class Logger {\r\n     constructor() {\r\n         this.dataMap = new Map();\r\n-        this.responses = {\r\n-            'invalid': {\r\n-                '': ''\r\n-            }\r\n-        }\r\n+        this.responses \r\n     }\r\n \r\n     init(data) {\r\n         data.loggers.forEach(el => {\r\n"
+                },
+                {
+                    "date": 1645307329260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n \r\n class Logger {\r\n     constructor() {\r\n         this.dataMap = new Map();\r\n-        this.responses = (a) => {\r\n+        this.responses = (a,) => {\r\n \r\n         }\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1645309318029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,5 +95,5 @@\n }\r\n \r\n const log = new Logger();\r\n log.init(inputJSON.data);\r\n-console.log(return log.validate('/aboutcompany', '/aboutus'));\n\\ No newline at end of file\n+console.log(returnlog.validate('/aboutcompany', '/aboutus'));\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1645306623676,
+            "name": "Commit-0",
+            "content": "console.log('loggers loaded....');\r\nconst inputJSON = {\r\n    \"data\": {\r\n        \"loggers\": [{\r\n            \"url\": \"/\",\r\n            \"description\": \"main\",\r\n            \"parent\": \"NULL\",\r\n        }, {\r\n            \"url\": \"/home\",\r\n            \"description\": \"home\",\r\n            \"parent\": \"/\",\r\n        }, {\r\n            \"url\": \"/aboutus\",\r\n            \"description\": \"about us\",\r\n            \"parent\": \"/home\",\r\n        }, {\r\n            \"url\": \"/aboutusmore\",\r\n            \"description\": \"about us more\",\r\n            \"parent\": \"/aboutus\",\r\n        }, {\r\n            \"url\": \"/contactus\",\r\n            \"description\": \"contact us\",\r\n            \"parent\": \"/\",\r\n        }, {\r\n            \"url\": \"/aboutcompany\",\r\n            \"description\": \"about company\",\r\n            \"parent\": \"/aboutus\",\r\n        }]\r\n    }\r\n}\r\n\r\nclass Logger {\r\n    constructor() {\r\n        this.dataMap = new Map();\r\n        this.responses = {\r\n            'invalid': {\r\n                '': ''\r\n            }\r\n        }\r\n    }\r\n\r\n    init(data) {\r\n        data.loggers.forEach(el => {\r\n            let parents = new Array();\r\n            this.getRecursiveParent(el, parents, data);\r\n            parents = [...new Set(parents)];\r\n            // console.log(el.url, ' >> parents >> ', parents);\r\n            const v = this.getChild(el, data);\r\n            this.dataMap.set(el.url, {\r\n                child: v,\r\n                parent: el.parent,\r\n                parents: parents,\r\n                hasChild: v.length > 0\r\n            });\r\n        });\r\n        // console.log('dataMap >>>', this.dataMap);\r\n    }\r\n\r\n    getRecursiveParent(el, arr, data) {\r\n        if (this.isDefined(el.parent) && el.parent !== \"NULL\")\r\n            arr.push(el.parent);\r\n        let p = this.getParent(el.parent, data);\r\n        if (!this.isDefined(p) && p !== \"NULL\" && !this.isDefined(p.parent) && p.parent !== \"NULL\") {\r\n            arr.push(p.parent);\r\n            this.getRecursiveParent(p, arr, data);\r\n        }\r\n    }\r\n\r\n    getParent(p, data) {\r\n        return this.dataMap.get(p);\r\n    }\r\n\r\n    getChild(p, data) {\r\n        return data.loggers.filter(e => {\r\n            return p.url === e.parent;\r\n        });\r\n    }\r\n\r\n    isDefined(param) {\r\n        return (typeof param === \"undefined\");\r\n    }\r\n\r\n    getDoc(el) {\r\n        return document.getElementById(el);\r\n    }\r\n\r\n    validate(a, b) {\r\n        let result,\r\n            invalidTxt = 'invalid';\r\n        if (this.isDefined(this.dataMap.get(a)) || this.isDefined(this.dataMap.get(b))) {\r\n            this.getDoc('loggers').innerHTML = result = `The given input URL ${a} or ${b} is <span class=\"rc\">${invalidTxt.toString().toUpperCase()}</span>.`;\r\n            return false;\r\n        }\r\n        this.getDoc('loggers').innerHTML = result = `The link between '${a}' and '${b}' is <span class=\"gc\">${((this.dataMap.get(a).parents.filter(e => e === b)).length > 0).toString().toUpperCase()}</span>`;\r\n    }\r\n}\r\n\r\nconst log = new Logger();\r\nlog.init(inputJSON.data);\r\nlog.validate('/aboutusmor', '/home');"
+        }
+    ]
+}

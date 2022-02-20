@@ -1,0 +1,42 @@
+{
+    "sourceFile": "expressjs/src/public/index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1645309530306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1645309554046,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n \r\n <body>\r\n     <h1>\r\n         Welcome to\r\n-        <span style=\"color:rgb(249, 255, 167)\">BaluXpress</span>\r\n+        <span style=\"color:rgb(249, 255, 167)\">KanyaXpress</span>\r\n         application server\r\n     </h1>\r\n \r\n     <div id=\"body_container\"></div>\r\n"
+                },
+                {
+                    "date": 1645309564410,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n \r\n <body>\r\n     <h1>\r\n         Welcome to\r\n-        <span style=\"color:rgb(249, 255, 167)\">KanyaXpress</span>\r\n+        <span style=\"color:rgb(249, 255, 167)\">Balu Kanya Xpress</span>\r\n         application server\r\n     </h1>\r\n \r\n     <div id=\"body_container\"></div>\r\n"
+                },
+                {
+                    "date": 1645316702596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,8 +37,9 @@\n     <script src=\"experiment.js\"></script>\r\n     <script src=\"algorithms.js\"></script> \r\n     -->\r\n     <script src=\"loggers.js\"></script>\r\n+    <script src=\"loggers.js\"></script>\r\n \r\n </body>\r\n \r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645316712279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n     <script src=\"experiment.js\"></script>\r\n     <script src=\"algorithms.js\"></script> \r\n     -->\r\n     <script src=\"loggers.js\"></script>\r\n-    <script src=\"loggers.js\"></script>\r\n+    <script src=\"data.js\"></script>\r\n \r\n </body>\r\n \r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645316822935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,11 +35,11 @@\n     <script src=\"hash.js\"></script>\r\n     <script src=\"moment.js\"></script>\r\n     <script src=\"experiment.js\"></script>\r\n     <script src=\"algorithms.js\"></script> \r\n-    -->\r\n-    <script src=\"loggers.js\"></script>\r\n-    <script src=\"data.js\"></script>\r\n+    \r\n+    <script src=\"loggers.js\"></script>-->\r\n+    <script src=\"datastruct.js\"></script>\r\n \r\n </body>\r\n \r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645316828131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,10 +35,10 @@\n     <script src=\"hash.js\"></script>\r\n     <script src=\"moment.js\"></script>\r\n     <script src=\"experiment.js\"></script>\r\n     <script src=\"algorithms.js\"></script> \r\n-    \r\n-    <script src=\"loggers.js\"></script>-->\r\n+    <script src=\"loggers.js\"></script>\r\n+     -->\r\n     <script src=\"datastruct.js\"></script>\r\n \r\n </body>\r\n \r\n"
+                }
+            ],
+            "date": 1645309530306,
+            "name": "Commit-0",
+            "content": "<!doctype html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <title>Krish - App</title>\r\n    <base href=\"/\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.ico\">\r\n    <meta name=\"theme-color\" media=\"(prefers-color-scheme: light)\" content=\"white\">\r\n    <!-- <meta http-equiv=\"Content-Security-Policy\" content=\"default-src  krishxpress:8080 * nonce-91152152cb04a5a1eb80b1574c714ebf641e99b4fe6bd70cdb40dd3b1b4a2849; img-src http://krishxpress:8080/*; child-src\r\n        'none';\"> -->\r\n    <link nonce=\"91152152cb04a5a1eb80b1574c714ebf641e99b4fe6bd70cdb40dd3b1b4a2849\" href=\"./css/all.css\"\r\n        rel=\"stylesheet\">\r\n</head>\r\n\r\n<body>\r\n    <h1>\r\n        Welcome to\r\n        <span style=\"color:rgb(249, 255, 167)\">BaluXpress</span>\r\n        application server\r\n    </h1>\r\n\r\n    <div id=\"body_container\"></div>\r\n    <div id=\"container\"></div>\r\n    <script nonce=\"91152152cb04a5a1eb80b1574c714ebf641e99b4fe6bd70cdb40dd3b1b4a2849\">\r\n        const cookies = document.cookie;\r\n        // console.log(cookies);\r\n        const genRandHex = size => [...Array(size)].map(() => Math.floor(Math.random() * 16).toString(16)).join('')\r\n        // console.log('rand >>>', genRandHex(32));\r\n    </script>\r\n    <div id=\"result\"></div>\r\n    <div id=\"loggers\"></div>\r\n    <!-- \r\n    <script src=\"hash.js\"></script>\r\n    <script src=\"moment.js\"></script>\r\n    <script src=\"experiment.js\"></script>\r\n    <script src=\"algorithms.js\"></script> \r\n    -->\r\n    <script src=\"loggers.js\"></script>\r\n\r\n</body>\r\n\r\n</html>"
+        }
+    ]
+}
