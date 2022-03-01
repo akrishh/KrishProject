@@ -10,6 +10,10 @@ class StringClass {
       .join("_")
       .toLowerCase();
   }
+
+  func2(p) {
+    return p.replace(/([a-z])([A-Z])/g, "$1_$2").toLowerCase();
+  }
 }
 
 const strObj = new StringClass();
