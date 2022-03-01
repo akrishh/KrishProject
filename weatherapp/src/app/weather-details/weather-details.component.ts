@@ -1,8 +1,9 @@
-import { Component, Input, OnInit, ViewChild } from '@angular/core';
+import { Component, Inject, Input, OnInit, ViewChild } from '@angular/core';
 import { faWind, faTint, faThermometerThreeQuarters } from '@fortawesome/free-solid-svg-icons';
 import { resetFakeAsyncZone } from '@angular/core/testing';
 import { WeatherdataService } from './../weather.service';
 import { LoginService } from '../login/login.service';
+import { WEATHER_DATA_TOKEN } from '../app.module';
 
 @Component({
   selector: 'app-weather-details',
@@ -11,6 +12,7 @@ import { LoginService } from '../login/login.service';
   providers: [WeatherdataService]
 
 })
+
 export class WeatherdetailsComponent {
   // @Input() weatherUser: string = '';
   weatherUser = '';
@@ -28,9 +30,11 @@ export class WeatherdetailsComponent {
   btnText: string = "Fetch";
   defaultValue: string = "Enter a City name";
   constructor(
-    public weatherData: WeatherdataService,
+    @Inject(WEATHER_DATA_TOKEN) private weatherData: WeatherdataService,
     private loginService: LoginService
-  ) { }
+  ) {
+    console.log(this.weatherData.getdata());
+  }
 
   ngOnInit(): void {
     this.getdata = this.weatherData.getdata();

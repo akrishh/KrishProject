@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.router.navigate(['welcome']);
+    // this.router.navigate(['welcome']);
     this.http.get('https://jsonplaceholder.typicode.com/posts?userId=1').subscribe(
       x => {
         return this.todo = x;

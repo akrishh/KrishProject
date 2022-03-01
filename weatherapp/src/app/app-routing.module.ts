@@ -6,11 +6,16 @@ import { LoginComponent } from './login/login.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 // import { Router } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { LearnComponent } from './learn/learn.component';
 
 const routes: Routes = [
   {
     path: 'weather',
     component: WeatherdetailsComponent
+  },
+  {
+    path: 'learn',
+    component: LearnComponent
   },
   {
     path: 'welcome',

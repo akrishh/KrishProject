@@ -12,5 +12,5 @@ expressjs/src/daemon/krishxpress.out.log
 expressjs/src/daemon/krishxpress.wrapper.log
 expressjs/src/daemon/krishxpress.out.log
 
-.lh/
+.lh
 .lh/expressjs/src/public/index.html.json

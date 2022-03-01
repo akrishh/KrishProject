@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { InjectionToken, NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatButtonModule } from '@angular/material/button';
@@ -19,6 +19,10 @@ import { HeaderComponent } from './header/header.component';
 import { AuthenticateComponent } from './authenticate/authenticate.component';
 import { SharedModule } from './shared/shared.module';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { LearnComponent } from './learn/learn.component';
+import { DropdownDirective } from './weather-details/dropdown.directive';
+
+export const WEATHER_DATA_TOKEN = new InjectionToken<WeatherdataService>("WEATHER_DATA_TOKEN");
 
 @NgModule({
   declarations: [
@@ -29,7 +33,9 @@ import { WelcomeComponent } from './welcome/welcome.component';
     PageNotFoundComponent,
     HeaderComponent,
     AuthenticateComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    LearnComponent,
+    DropdownDirective
   ],
   imports: [
     HttpClientModule,
@@ -43,7 +49,12 @@ import { WelcomeComponent } from './welcome/welcome.component';
     AppRoutingModule,
     SharedModule
   ],
-  providers: [WeatherdataService],
+  providers: [
+    {
+      provide: WEATHER_DATA_TOKEN,
+      useClass: WeatherdataService
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

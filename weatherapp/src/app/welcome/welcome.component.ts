@@ -11,26 +11,19 @@ export class WelcomeComponent implements OnInit {
 
   public welcomeText = "Welcome!!!";
   public idValue = "myId";
-  public isDisabled = false;
-  public valueofText = "TEST";
+  public valueofText = "TESTING VALUE";
   public displayText = true;
-
-
   public color = "red";
-
-
   public colors = new Array("purple", "blue");
 
   @Input('parentData') public name: any;
-
   @Output() public childEvent = new EventEmitter();
 
   ngOnInit(): void {
-
   }
 
   fireEvent() {
-    this.childEvent.emit('from the Child');
+    this.childEvent.emit(this.valueofText);
   }
 
 }

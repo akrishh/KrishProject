@@ -5,5 +5,8 @@
     "editor.defaultFormatter": "formulahendry.code-runner",
     "[css]": {
         "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
 }

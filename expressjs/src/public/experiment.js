@@ -5,46 +5,33 @@ class Node {
     }
 }
 
-
 class LinkedList {
     constructor() {
         this.head = null;
         this.size = 0;
     }
-
     add(el) {
-        var node = new Node(el);
-        var current;
-
-
-
-        if (this.head === null) {
+        let node = new Node(el),
+            current;
+        if (this.head === null)
             this.head = node;
-        } else {
+        else {
             current = this.head;
             console.log('current >>>', current);
-            while (current.next !== null) {
+            while (current.next !== null)
                 current = current.next;
-            }
-
             current.next = node;
-
         }
-
         this.size++;
         console.log(node, this);
-
-
     }
 }
 
-
-const ll = new LinkedList();
-ll.add(1111);
-ll.add(222);
-ll.add(333);
-console.log('ll >> ', ll);
-
+// const ll = new LinkedList();
+// ll.add(1111);
+// ll.add(222);
+// ll.add(333);
+// console.log('ll >> ', ll);
 
 class TreeNode {
     constructor(value) {
@@ -53,13 +40,13 @@ class TreeNode {
     }
 }
 
-const a = new TreeNode('a');
-const b = new TreeNode('b');
-const c = new TreeNode('c');
-const d = new TreeNode('d');
-const e = new TreeNode('e');
-const f = new TreeNode('f');
-const g = new TreeNode('g');
+// const a = new TreeNode('a');
+// const b = new TreeNode('b');
+// const c = new TreeNode('c');
+// const d = new TreeNode('d');
+// const e = new TreeNode('e');
+// const f = new TreeNode('f');
+// const g = new TreeNode('g');
 
 const createTree = () => {
     a.descendants.push(b);
@@ -68,14 +55,10 @@ const createTree = () => {
     d.descendants.push(e, f, g);
     console.log(a);
 }
-
-createTree();
-
+// createTree();
 
 const LEFT = 0;
-
 const RIGHT = 1;
-
 class TreeNode2 {
     constructor(value) {
         this.value = value;
@@ -166,13 +149,12 @@ class HashTable {
     }
 }
 
-const ht = new HashTable();
+// const ht = new HashTable();
 
-ht.set('USA', 200);
-ht.set('Canada', 300);
+// ht.set('USA', 200);
+// ht.set('Canada', 300);
 
-console.log('Hash Table', ht.get('USA'));
-
+// console.log('Hash Table', ht.get('USA'));
 
 class PromiseExperiment {
     constructor() {}
@@ -203,10 +185,8 @@ class PromiseExperiment {
     }
 }
 
-const promiseExperiment = new PromiseExperiment();
-
+// const promiseExperiment = new PromiseExperiment();
 // promiseExperiment.experiment();
-
 
 class Stack {
     constructor(str) {
@@ -229,8 +209,8 @@ class Stack {
     }
 }
 
-const stackObj = new Stack('JavaScript');
-console.log(`Original String is 'JavaScript' >>> ${stackObj.reverseString()}`);
+// const stackObj = new Stack('JavaScript');
+// console.log(`Original String is 'JavaScript' >>> ${stackObj.reverseString()}`);
 
 class Queue {
     constructor() {
@@ -246,9 +226,9 @@ class Queue {
     }
 }
 
-const q = new Queue();
-q.addQueue(3)
-q.addQueue(4);
-q.addQueue(8);
-q.removeQueue();
-console.log(q);
+// const q = new Queue();
+// q.addQueue(3)
+// q.addQueue(4);
+// q.addQueue(8);
+// q.removeQueue();
+// console.log(q);
