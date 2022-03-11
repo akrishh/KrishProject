@@ -14,8 +14,12 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "download-pdf": "^0.1.6",
     "http": "^0.0.1-security",
+    "ibm-openapi-validator": "^0.57.4",
     "node-windows": "^1.0.0-beta.6",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "stream-chain": "^2.2.5",
+    "stream-json": "^1.7.4"
   }
 }

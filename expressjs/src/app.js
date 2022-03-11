@@ -1,6 +1,5 @@
-const httpServer = require('http');
-const server = require('./server');
-
+const httpServer = require("http");
+const server = require("./server");
 
 // app.listen(conf.getPort());
 // console.log(conf.getPort());
@@ -16,6 +15,6 @@ const server = require('./server');
 // console.log('========= server.getPort() ==============');
 // console.log(server.get('port'));
 
-httpServer.createServer(server).listen(server.get('port'), function () {
-    console.log("KrishXpress Server running on Port ", server.get('port'));
-})
+httpServer.createServer(server).listen(server.get("port"), function () {
+  console.log("KrishXpress Server running on Port ", server.get("port"));
+});

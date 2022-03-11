@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 6,
+            "activePatchIndex": 15,
             "patches": [
                 {
                     "date": 1645309530306,
@@ -32,6 +32,42 @@
                 {
                     "date": 1645316828131,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,10 +35,10 @@\n     <script src=\"hash.js\"></script>\r\n     <script src=\"moment.js\"></script>\r\n     <script src=\"experiment.js\"></script>\r\n     <script src=\"algorithms.js\"></script> \r\n-    \r\n-    <script src=\"loggers.js\"></script>-->\r\n+    <script src=\"loggers.js\"></script>\r\n+     -->\r\n     <script src=\"datastruct.js\"></script>\r\n \r\n </body>\r\n \r\n"
+                },
+                {
+                    "date": 1645380120974,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,12 +30,12 @@\n         // console.log('rand >>>', genRandHex(32));\r\n     </script>\r\n     <div id=\"result\"></div>\r\n     <div id=\"loggers\"></div>\r\n+    <script src=\"experiment.js\"></script>\r\n     <!-- \r\n     <script src=\"hash.js\"></script>\r\n     <script src=\"moment.js\"></script>\r\n-    <script src=\"experiment.js\"></script>\r\n     <script src=\"algorithms.js\"></script> \r\n     <script src=\"loggers.js\"></script>\r\n      -->\r\n     <script src=\"datastruct.js\"></script>\r\n"
+                },
+                {
+                    "date": 1645380126118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,15 +30,15 @@\n         // console.log('rand >>>', genRandHex(32));\r\n     </script>\r\n     <div id=\"result\"></div>\r\n     <div id=\"loggers\"></div>\r\n+    <!-- \r\n+        <script src=\"hash.js\"></script>\r\n+        <script src=\"moment.js\"></script>\r\n+        <script src=\"algorithms.js\"></script> \r\n+        <script src=\"loggers.js\"></script>\r\n+    -->\r\n     <script src=\"experiment.js\"></script>\r\n-    <!-- \r\n-    <script src=\"hash.js\"></script>\r\n-    <script src=\"moment.js\"></script>\r\n-    <script src=\"algorithms.js\"></script> \r\n-    <script src=\"loggers.js\"></script>\r\n-     -->\r\n     <script src=\"datastruct.js\"></script>\r\n \r\n </body>\r\n \r\n"
+                },
+                {
+                    "date": 1645397805773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,10 +35,10 @@\n         <script src=\"hash.js\"></script>\r\n         <script src=\"moment.js\"></script>\r\n         <script src=\"algorithms.js\"></script> \r\n         <script src=\"loggers.js\"></script>\r\n+        <script src=\"experiment.js\"></script>\r\n     -->\r\n-    <script src=\"experiment.js\"></script>\r\n     <script src=\"datastruct.js\"></script>\r\n \r\n </body>\r\n \r\n"
+                },
+                {
+                    "date": 1646011252463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,11 @@\n         // console.log('rand >>>', genRandHex(32));\r\n     </script>\r\n     <div id=\"result\"></div>\r\n     <div id=\"loggers\"></div>\r\n+    <script>\r\n+        \r\n+    </script>\r\n     <!-- \r\n         <script src=\"hash.js\"></script>\r\n         <script src=\"moment.js\"></script>\r\n         <script src=\"algorithms.js\"></script> \r\n"
+                },
+                {
+                    "date": 1646011262381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,11 @@\n     </script>\r\n     <div id=\"result\"></div>\r\n     <div id=\"loggers\"></div>\r\n     <script>\r\n-        \r\n+        window.onload = () => {\r\n+            \r\n+        }\r\n     </script>\r\n     <!-- \r\n         <script src=\"hash.js\"></script>\r\n         <script src=\"moment.js\"></script>\r\n"
+                },
+                {
+                    "date": 1646011276809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     <div id=\"result\"></div>\r\n     <div id=\"loggers\"></div>\r\n     <script>\r\n         window.onload = () => {\r\n-            \r\n+            let scrip\r\n         }\r\n     </script>\r\n     <!-- \r\n         <script src=\"hash.js\"></script>\r\n"
+                },
+                {
+                    "date": 1646011282942,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     <div id=\"result\"></div>\r\n     <div id=\"loggers\"></div>\r\n     <script>\r\n         window.onload = () => {\r\n-            let scrip\r\n+            \r\n         }\r\n     </script>\r\n     <!-- \r\n         <script src=\"hash.js\"></script>\r\n"
+                },
+                {
+                    "date": 1646011292032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     <div id=\"result\"></div>\r\n     <div id=\"loggers\"></div>\r\n     <script>\r\n         window.onload = () => {\r\n-            includeScripts\r\n+            includeScripts()\r\n         }\r\n     </script>\r\n     <!-- \r\n         <script src=\"hash.js\"></script>\r\n"
+                },
+                {
+                    "date": 1646011309366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     <div id=\"result\"></div>\r\n     <div id=\"loggers\"></div>\r\n     <script>\r\n \r\n-        \r\n+        i\r\n \r\n         window.onload = () => {\r\n             includeScripts();\r\n         }\r\n"
                 }
             ],
             "date": 1645309530306,
